@@ -1,0 +1,372 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		561F1C7C2996BCD8006FAD9B /* TreeArtApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561F1C7B2996BCD8006FAD9B /* TreeArtApp.swift */; };
+		561F1C7E2996BCD8006FAD9B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561F1C7D2996BCD8006FAD9B /* ContentView.swift */; };
+		561F1C802996BCDA006FAD9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 561F1C7F2996BCDA006FAD9B /* Assets.xcassets */; };
+		561F1C832996BCDA006FAD9B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 561F1C822996BCDA006FAD9B /* Preview Assets.xcassets */; };
+		561F1C8B2996BCF2006FAD9B /* TreeSketch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561F1C8A2996BCF2006FAD9B /* TreeSketch.swift */; };
+		561F1C8E2996BD0D006FAD9B /* SwiftyCreatives in Frameworks */ = {isa = PBXBuildFile; productRef = 561F1C8D2996BD0D006FAD9B /* SwiftyCreatives */; };
+		561F1C9029973D7C006FAD9B /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561F1C8F29973D7C006FAD9B /* Color+.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		561F1C782996BCD8006FAD9B /* TreeArt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TreeArt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		561F1C7B2996BCD8006FAD9B /* TreeArtApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeArtApp.swift; sourceTree = "<group>"; };
+		561F1C7D2996BCD8006FAD9B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		561F1C7F2996BCDA006FAD9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		561F1C822996BCDA006FAD9B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		561F1C842996BCDA006FAD9B /* TreeArt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TreeArt.entitlements; sourceTree = "<group>"; };
+		561F1C8A2996BCF2006FAD9B /* TreeSketch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeSketch.swift; sourceTree = "<group>"; };
+		561F1C8F29973D7C006FAD9B /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		561F1C752996BCD8006FAD9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				561F1C8E2996BD0D006FAD9B /* SwiftyCreatives in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		561F1C6F2996BCD8006FAD9B = {
+			isa = PBXGroup;
+			children = (
+				561F1C7A2996BCD8006FAD9B /* TreeArt */,
+				561F1C792996BCD8006FAD9B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		561F1C792996BCD8006FAD9B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				561F1C782996BCD8006FAD9B /* TreeArt.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		561F1C7A2996BCD8006FAD9B /* TreeArt */ = {
+			isa = PBXGroup;
+			children = (
+				561F1C7B2996BCD8006FAD9B /* TreeArtApp.swift */,
+				561F1C7D2996BCD8006FAD9B /* ContentView.swift */,
+				561F1C8A2996BCF2006FAD9B /* TreeSketch.swift */,
+				561F1C8F29973D7C006FAD9B /* Color+.swift */,
+				561F1C7F2996BCDA006FAD9B /* Assets.xcassets */,
+				561F1C842996BCDA006FAD9B /* TreeArt.entitlements */,
+				561F1C812996BCDA006FAD9B /* Preview Content */,
+			);
+			path = TreeArt;
+			sourceTree = "<group>";
+		};
+		561F1C812996BCDA006FAD9B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				561F1C822996BCDA006FAD9B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		561F1C772996BCD8006FAD9B /* TreeArt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 561F1C872996BCDA006FAD9B /* Build configuration list for PBXNativeTarget "TreeArt" */;
+			buildPhases = (
+				561F1C742996BCD8006FAD9B /* Sources */,
+				561F1C752996BCD8006FAD9B /* Frameworks */,
+				561F1C762996BCD8006FAD9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TreeArt;
+			packageProductDependencies = (
+				561F1C8D2996BD0D006FAD9B /* SwiftyCreatives */,
+			);
+			productName = TreeArt;
+			productReference = 561F1C782996BCD8006FAD9B /* TreeArt.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		561F1C702996BCD8006FAD9B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					561F1C772996BCD8006FAD9B = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 561F1C732996BCD8006FAD9B /* Build configuration list for PBXProject "TreeArt" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 561F1C6F2996BCD8006FAD9B;
+			packageReferences = (
+				561F1C8C2996BD0D006FAD9B /* XCRemoteSwiftPackageReference "swifty-creatives" */,
+			);
+			productRefGroup = 561F1C792996BCD8006FAD9B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				561F1C772996BCD8006FAD9B /* TreeArt */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		561F1C762996BCD8006FAD9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				561F1C832996BCDA006FAD9B /* Preview Assets.xcassets in Resources */,
+				561F1C802996BCDA006FAD9B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		561F1C742996BCD8006FAD9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				561F1C8B2996BCF2006FAD9B /* TreeSketch.swift in Sources */,
+				561F1C9029973D7C006FAD9B /* Color+.swift in Sources */,
+				561F1C7E2996BCD8006FAD9B /* ContentView.swift in Sources */,
+				561F1C7C2996BCD8006FAD9B /* TreeArtApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		561F1C852996BCDA006FAD9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		561F1C862996BCDA006FAD9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		561F1C882996BCDA006FAD9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TreeArt/TreeArt.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TreeArt/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yukiny.example.TreeArt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		561F1C892996BCDA006FAD9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TreeArt/TreeArt.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TreeArt/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yukiny.example.TreeArt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		561F1C732996BCD8006FAD9B /* Build configuration list for PBXProject "TreeArt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				561F1C852996BCDA006FAD9B /* Debug */,
+				561F1C862996BCDA006FAD9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		561F1C872996BCDA006FAD9B /* Build configuration list for PBXNativeTarget "TreeArt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				561F1C882996BCDA006FAD9B /* Debug */,
+				561F1C892996BCDA006FAD9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		561F1C8C2996BD0D006FAD9B /* XCRemoteSwiftPackageReference "swifty-creatives" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yukiny0811/swifty-creatives";
+			requirement = {
+				kind = exactVersion;
+				version = 1.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		561F1C8D2996BD0D006FAD9B /* SwiftyCreatives */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 561F1C8C2996BD0D006FAD9B /* XCRemoteSwiftPackageReference "swifty-creatives" */;
+			productName = SwiftyCreatives;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 561F1C702996BCD8006FAD9B /* Project object */;
+}
