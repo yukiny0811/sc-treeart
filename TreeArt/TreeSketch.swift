@@ -8,19 +8,25 @@
 import SwiftyCreatives
 import CoreGraphics
 import AppKit
+import Combine
+import SwiftUI
 
-final class TreeSketch: Sketch {
+final class TreeSketch: Sketch, ObservableObject {
     
-    var tipBoxColor: f3 = f3(1.0, 0.2, 0.7)
-    var tipBoxScale: Float = 0.15
-    var lineWidth: Float = 0.1
-    var branchTipColor: f3 = f3(1.0, 0.3, 1.0)
-    var lineColor: f3 = f3(1.0, 1.0, 1.0)
-    var zPlus: Float = 0.3
-    var zMinus: Float = -0.3
-    var yPlus: Float = 0.15
-    var yMinus: Float = -0.15
-    var growGene: String = "FyF+[+FyF-yPA]-[-yF+YPA]"
+    @Published var tipBoxColor: Color = Color(cgColor: CGColor(red: 1.0, green: 0.2, blue: 0.7, alpha: 1.0))
+    @Published var tipBoxScale: Float = 0.15
+    @Published var lineWidth: Float = 0.1
+    @Published var branchTipColor: Color = Color(cgColor: CGColor(red: 1.0, green: 0.3, blue: 1.0, alpha: 1.0))
+    @Published var lineColor: Color = Color(cgColor: CGColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0))
+    @Published var zPlus: Float = 0.3
+    @Published var zMinus: Float = -0.3
+    @Published var yPlus: Float = 0.15
+    @Published var yMinus: Float = -0.15
+    @Published var growGene: String = "FyF+[+FyF-yPA]-[-yF+YPA]"
+    
+    var tipBoxColorf3: f3 { tipBoxColor.tof3() }
+    var branchTipColorf3: f3 { branchTipColor.tof3() }
+    var lineColorf3: f3 { lineColor.tof3() }
     
     private var tree = "F"
     private var speeds: [Float] = [0.01, -0.015, 0.004, 0.008, -0.02]
@@ -49,7 +55,7 @@ final class TreeSketch: Sketch {
             rotateY(currentRotation[i])
             translate(Float(i + 2) * 2, 0, 0)
             color(1.0, 0.8, 1.0, 1.0)
-            box(0, 0, 0, 0.3, 0.3, 0.3)
+            box(0.3, 0.3, 0.3)
             popMatrix()
             
             pushMatrix()
@@ -58,7 +64,7 @@ final class TreeSketch: Sketch {
                 rotateY(-speeds[i] * 20)
                 pushMatrix()
                 translate(Float(i + 2) * 2, 0, 0)
-                box(0, 0, 0, 0.15, 0.15, 0.15)
+                box(0.15, 0.15, 0.15)
                 popMatrix()
             }
             popMatrix()
@@ -91,14 +97,14 @@ final class TreeSketch: Sketch {
     func compile(char: Character) {
         switch char {
         case "A":
-            color(tipBoxColor.x, tipBoxColor.y, tipBoxColor.z, 1.0)
-            box(0, 0, 0, tipBoxScale, tipBoxScale, tipBoxScale)
+            color(tipBoxColorf3, alpha: 1.0)
+            box(tipBoxScale, tipBoxScale, tipBoxScale)
         case "P":
-            color(branchTipColor.x, branchTipColor.y, branchTipColor.z, 1.0)
+            color(branchTipColorf3, alpha: 1.0)
             boldline(0, 0, 0, 0, 1, 0, width: lineWidth)
             translate(0, 1, 0)
         case "F":
-            color(lineColor.x, lineColor.y, lineColor.z, 0.8)
+            color(lineColorf3, alpha: 0.8)
             boldline(0, 0, 0, 0, 1, 0, width: lineWidth)
             translate(0, 1, 0)
         case "+":

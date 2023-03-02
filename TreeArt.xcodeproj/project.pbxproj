@@ -355,7 +355,7 @@
 			repositoryURL = "https://github.com/yukiny0811/swifty-creatives";
 			requirement = {
 				kind = exactVersion;
-				version = 1.9.0;
+				version = 1.11.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
